@@ -1,12 +1,12 @@
-.gameboard {
-  width: 80px;
-  height: 40px;
-}
+/*.gameboard {
+  width: 404px;
+  height: 404px;
+}*/
 
 .column1, .column2, .column3, .column4 {
   margin: 1px;
-  width: 10px;
-  height: 40px;
+  width: 125px;
+  height: 500px;
   display: inline-block;
   background-color:lightgreen;
 }
@@ -14,7 +14,7 @@
 .cell {
   box-sizing: border-box;
   border: 1px solid white;
-  width: 10px;
-  height: 10px;
+  width: 125px;
+  height: 125px;
   background-color: lightblue;
 }
