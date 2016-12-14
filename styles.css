@@ -1,17 +1,20 @@
-.column1, .column2, .column3, .column4, .column5, .column6 {
+.gameboard {
+  width: 80px;
+  height: 40px;
+}
+
+.column1, .column2, .column3, .column4 {
   margin: 1px;
-  width: 50px;
-  height: 10px;
-  display: flex;
+  width: 10px;
+  height: 40px;
+  display: inline-block;
   background-color:lightgreen;
 }
 
-* {box sizing: border-box;}
-
 .cell {
-  width: 34%;
+  box-sizing: border-box;
+  border: 1px solid white;
+  width: 10px;
   height: 10px;
   background-color: lightblue;
-  float: left;
-  margin-left: 1px;
 }
