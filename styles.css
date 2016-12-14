@@ -1,0 +1,17 @@
+.column1, .column2, .column3, .column4, .column5, .column6 {
+  margin: 1px;
+  width: 50px;
+  height: 10px;
+  display: flex;
+  background-color:lightgreen;
+}
+
+* {box sizing: border-box;}
+
+.cell {
+  width: 34%;
+  height: 10px;
+  background-color: lightblue;
+  float: left;
+  margin-left: 1px;
+}

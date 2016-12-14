@@ -1,0 +1,32 @@
+{
+  "name": "project1ga",
+  "version": "1.0.0",
+  "description": "game",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenkaplan/Project1GA.git"
+  },
+  "keywords": [
+    "connect",
+    "four",
+    "general",
+    "assembly",
+    "jennifer",
+    "kaplan"
+  ],
+  "author": "Jennifer Kaplan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenkaplan/Project1GA/issues"
+  },
+  "homepage": "https://github.com/jenkaplan/Project1GA#readme",
+  "devDependencies": {
+    "eslint": "^3.12.1",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
