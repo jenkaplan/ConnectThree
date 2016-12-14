@@ -1,7 +1,4 @@
 #Pseudo Code for Connect Two
-##board.js
--set up booleans to check if the cell is full
-
 ##game.js
 -add click event to each column
 -upon click, have the piece slide down to the bottom most empty cell
