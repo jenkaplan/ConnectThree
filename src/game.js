@@ -13,9 +13,9 @@ let $c1 = ['#c1r4', '#c1r3', '#c1r2', '#c1r1'];
 // }
 
 function addPlayer() {
-  console.log('working');
+  // console.log('working');
   // let $c1 = ['c1r1', 'c1r2', 'c1r3', 'c1r4'];
-  if ($('#c1r4').hasClass('red') || $('#c1r4').hasClass('blue')) {
+  if ($('#c1r4').hasClass('.red') || $('#c1r4').hasClass('.blue')) {
     for (let i = 3; i < $c1.length; i - 1) {
       if ($currentPlayer === 'red') {
         $('c1[i]').addClass('red');
@@ -24,7 +24,6 @@ function addPlayer() {
       }
     }
   } else {
-    console.log($('#c1r1'));
     if ($currentPlayer === 'red') {
         $('#c1r4').addClass('red');
       } else {
