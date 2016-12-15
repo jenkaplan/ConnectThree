@@ -1,3 +1,7 @@
+.gameboard {
+  position: relative;
+}
+
 .column1, .column2, .column3, .column4 {
   margin: 1px;
   width: 125px;
@@ -12,4 +16,15 @@
   width: 125px;
   height: 125px;
   background-color: lightblue;
+}
+
+  #trump {
+  position:  absolute;
+  top:-40px;
+  left:50px;
+  transition: all 1s;
+}
+
+#occupy {
+  top: 50px;
 }

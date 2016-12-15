@@ -1,7 +1,9 @@
 #Pseudo Code for Connect Two
 ##game.js
 -add click event to each column
+!Completed!
 -upon click, have the piece slide down to the bottom most empty cell
+
 -set cell as filled, possibly turn boolean to false or add to an array
 
 ##app.js

@@ -1,3 +1,13 @@
+// $(document).ready(function() {
+// $('.column1').click(function(event){
+//   $('.trump').attr("id","occupy");
+//   $(event.target).html('Trump');
+// })})
+
+$('.column1').click(function(event){
+  $('.trump').css("background-color","red")
+})
+
 function addPlayer () {
 
 }
