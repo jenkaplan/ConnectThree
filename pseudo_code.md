@@ -3,8 +3,10 @@
 -add click event to each column
 !Completed!
 -upon click, have the piece slide down to the bottom most empty cell
+!Completed!
 
 -set cell as filled, possibly turn boolean to false or add to an array
+!Not needed!
 
 ##app.js
 -create winning logic

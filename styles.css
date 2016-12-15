@@ -7,7 +7,7 @@
   width: 125px;
   height: 500px;
   display: inline-block;
-  background-color:lightgreen;
+ /* background-color:lightgreen;*/
 }
 
 .cell {
@@ -15,7 +15,7 @@
   border: 1px solid white;
   width: 125px;
   height: 125px;
-  background-color: orange;
+  background-color: lightblue;
 }
 
 .blue {

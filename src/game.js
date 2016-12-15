@@ -1,59 +1,56 @@
 /* eslint-env jQuery, es6 */
 
-const $cellDivs = $('.cell div');
 let currentPlayer = 'red';
-let $gameBoard = $['c1r1', 'c1r2', 'c1r3', 'c1r4', 'c2r1', 'c2r2', 'c2r3', 'c2r4', 'c3r1', 'c3r2', 'c3r3', 'c3r4', 'c4r1', 'c4r2', 'c4r3', 'c4r4'];
-let $inProgress = true;
-let $cellContents = [];
-let $lowestCellCol1 = c1r4;
 let c1 = ['#c1r4', '#c1r3', '#c1r2', '#c1r1'];
+let c2 = ['#c2r4', '#c2r3', '#c2r2', '#c2r1'];
+let c3 = ['#c3r4', '#c3r3', '#c3r2', '#c3r1'];
+let c4 = ['#c4r4', '#c4r3', '#c4r2', '#c4r1'];
 
-function addPlayer() {
-  // console.log('working');
-  // let $c1 = ['c1r1', 'c1r2', 'c1r3', 'c1r4'];
-  if ($('#c1r4').hasClass('red') || $('#c1r4').hasClass('blue')) {
-      // for (let i = 0; i < c1.length; i++) {
-      if (currentPlayer === 'red') {
-        $(c1[0]).addClass('red');
-      } else {
-        $(c1[0]).addClass('blue');
-      }
-      c1.shift();
-    // }
-    } else {
-      if (currentPlayer === 'red') {
-        $(c1[0]).addClass('red');
-      } else {
-        $(c1[0]).addClass('blue');
-      }
-      c1.shift();
-    }
+function addPlayerCol1() {
+  if (currentPlayer === 'red') {
+    $(c1[0]).addClass('red');
+    currentPlayer = 'blue';
+  } else {
+    $(c1[0]).addClass('blue');
+    currentPlayer = 'red';
+  }
+  c1.shift();
 }
 
-// let lowestCellCol1 = c1r4;
-// lowestCellCol1--
-// ${lowestCellCol1--};
+function addPlayerCol2() {
+  if (currentPlayer === 'red') {
+    $(c2[0]).addClass('red');
+    currentPlayer = 'blue';
+  } else {
+    $(c2[0]).addClass('blue');
+    currentPlayer = 'red';
+  }
+  c2.shift();
+}
 
-// based on Tic Tac Toe created in class
-// function addPlayer(index) {
-//   if (inProgress === true) {
-//     if (cellDivs[index].innerHTML === '') {
-//       if (currentPlayer === 'red')
-//         if (.column1) {
-//           for (let i = 0 < 3)
-//         }
-//         $('.column').click(function(event){
-//           $('red').css("background-color","red")
-//         });
-//       }
-//     }
-//   }
-// }
+function addPlayerCol3() {
+  if (currentPlayer === 'red') {
+    $(c3[0]).addClass('red');
+    currentPlayer = 'blue';
+  } else {
+    $(c3[0]).addClass('blue');
+    currentPlayer = 'red';
+  }
+  c3.shift();
+}
 
-// $('#c1r4').on('click', addPlayer);
-// $('#c1r1').on('click', changeColor);
-$('.column1').on('click', addPlayer);
-// $('.column1' > 'c1r1', 'c1r2', 'c1r3', 'c1r4').on('click', addPlayer);
-// $('.column2').on('click', addPlayer);
-// $('.column3').on('click', addPlayer);
-// $('.column4').on('click', addPlayer);
+function addPlayerCol4() {
+  if (currentPlayer === 'red') {
+    $(c4[0]).addClass('red');
+    currentPlayer = 'blue';
+  } else {
+    $(c4[0]).addClass('blue');
+    currentPlayer = 'red';
+  }
+  c4.shift();
+}
+
+$('.column1').on('click', addPlayerCol1);
+$('.column2').on('click', addPlayerCol2);
+$('.column3').on('click', addPlayerCol3);
+$('.column4').on('click', addPlayerCol4);
