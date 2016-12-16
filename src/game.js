@@ -38,7 +38,7 @@ function addPlayerCol2() {
     currentPlayer = 'red';
   }
   c2.shift();
-  // checkWin();
+  checkWin();
 }
 
 function addPlayerCol3() {
@@ -50,7 +50,7 @@ function addPlayerCol3() {
     currentPlayer = 'red';
   }
   c3.shift();
-  // checkWin();
+  checkWin();
 }
 
 function addPlayerCol4() {
@@ -62,7 +62,7 @@ function addPlayerCol4() {
     currentPlayer = 'red';
   }
   c4.shift();
-  // checkWin();
+  checkWin();
 }
 
 
