@@ -1,5 +1,11 @@
+h1 {
+  text-align: center;
+}
+
 .gameboard {
-  position: relative;
+  float: center;
+  margin: 0 auto;
+  width: 50%;
 }
 
 .column {
@@ -24,3 +30,4 @@
 .putin {
   background-color: red;
 }
+
