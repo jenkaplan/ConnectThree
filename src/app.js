@@ -1,57 +1,63 @@
 /* eslint-env jQuery, es5, es6 */
 
-function checkWin() {
-  if  (($('#c1r4').hasClass('red') && $('#c1r3').hasClass('red') && $('#c1r2').hasClass('red')) ||
-        ($('#c2r4').hasClass('red') && $('#c2r3').hasClass('red') && $('#c2r2').hasClass('red')) ||
-        ($('#c3r4').hasClass('red') && $('#c3r3').hasClass('red') && $('#c3r2').hasClass('red')) ||
-        ($('#c4r4').hasClass('red') && $('#c4r3').hasClass('red') && $('#c4r2').hasClass('red')) ||
-        ($('#c4r2').hasClass('red') && $('#c4r3').hasClass('red') && $('#c4r4').hasClass('red')) ||
-        ($('#c3r2').hasClass('red') && $('#c3r3').hasClass('red') && $('#c3r4').hasClass('red')) ||
-        ($('#c2r2').hasClass('red') && $('#c2r3').hasClass('red') && $('#c2r4').hasClass('red')) ||
-        ($('#c1r2').hasClass('red') && $('#c1r3').hasClass('red') && $('#c1r4').hasClass('red')) ||
-        ($('#c1r1').hasClass('red') && $('#c2r1').hasClass('red') && $('#c3r1').hasClass('red')) ||
-        ($('#c1r2').hasClass('red') && $('#c2r2').hasClass('red') && $('#c3r2').hasClass('red')) ||
-        ($('#c1r3').hasClass('red') && $('#c2r3').hasClass('red') && $('#c3r3').hasClass('red')) ||
-        ($('#c1r4').hasClass('red') && $('#c2r4').hasClass('red') && $('#c3r4').hasClass('red')) ||
-        ($('#c2r1').hasClass('red') && $('#c3r1').hasClass('red') && $('#c4r1').hasClass('red')) ||
-        ($('#c2r2').hasClass('red') && $('#c3r2').hasClass('red') && $('#c4r2').hasClass('red')) ||
-        ($('#c2r3').hasClass('red') && $('#c3r3').hasClass('red') && $('#c4r3').hasClass('red')) ||
-        ($('#c2r4').hasClass('red') && $('#c3r4').hasClass('red') && $('#c4r4').hasClass('red')) ||
-        ($('#c1r3').hasClass('red') && $('#c2r2').hasClass('red') && $('#c3r1').hasClass('red')) ||
-        ($('#c1r4').hasClass('red') && $('#c2r3').hasClass('red') && $('#c4r2').hasClass('red')) ||
-        ($('#c4r1').hasClass('red') && $('#c2r3').hasClass('red') && $('#c4r2').hasClass('red')) ||
-        ($('#c2r4').hasClass('red') && $('#c3r3').hasClass('red') && $('#c2r2').hasClass('red')) ||
-        ($('#c1r4').hasClass('red') && $('#c2r3').hasClass('red') && $('#c4r2').hasClass('red')) ||
-        ($('#c2r1').hasClass('red') && $('#c3r2').hasClass('red') && $('#c4r1').hasClass('red')) ||
-        ($('#c1r2').hasClass('red') && $('#c2r3').hasClass('red') && $('#c3r4').hasClass('red')) ||
-        ($('#c1r1').hasClass('red') && $('#c2r2').hasClass('red') && $('#c3r3').hasClass('red')) ||
-        ($('#c4r4').hasClass('red') && $('#c2r2').hasClass('red') && $('#c3r3').hasClass('red')) ||
-        ($('#c1r4').hasClass('blue') && $('#c1r3').hasClass('blue') && $('#c1r2').hasClass('blue')) ||
-        ($('#c2r4').hasClass('blue') && $('#c2r3').hasClass('blue') && $('#c2r2').hasClass('blue')) ||
-        ($('#c3r4').hasClass('blue') && $('#c3r3').hasClass('blue') && $('#c3r2').hasClass('blue')) ||
-        ($('#c4r4').hasClass('blue') && $('#c4r3').hasClass('blue') && $('#c4r2').hasClass('blue')) ||
-        ($('#c4r2').hasClass('blue') && $('#c4r3').hasClass('blue') && $('#c4r4').hasClass('blue')) ||
-        ($('#c3r2').hasClass('blue') && $('#c3r3').hasClass('blue') && $('#c3r4').hasClass('blue')) ||
-        ($('#c2r2').hasClass('blue') && $('#c2r3').hasClass('blue') && $('#c2r4').hasClass('blue')) ||
-        ($('#c1r2').hasClass('blue') && $('#c1r3').hasClass('blue') && $('#c1r4').hasClass('blue')) ||
-        ($('#c1r1').hasClass('blue') && $('#c2r1').hasClass('blue') && $('#c3r1').hasClass('blue')) ||
-        ($('#c1r2').hasClass('blue') && $('#c2r2').hasClass('blue') && $('#c3r2').hasClass('blue')) ||
-        ($('#c1r3').hasClass('blue') && $('#c2r3').hasClass('blue') && $('#c3r3').hasClass('blue')) ||
-        ($('#c1r4').hasClass('blue') && $('#c2r4').hasClass('blue') && $('#c3r4').hasClass('blue')) ||
-        ($('#c2r1').hasClass('blue') && $('#c3r1').hasClass('blue') && $('#c4r1').hasClass('blue')) ||
-        ($('#c2r2').hasClass('blue') && $('#c3r2').hasClass('blue') && $('#c4r2').hasClass('blue')) ||
-        ($('#c2r3').hasClass('blue') && $('#c3r3').hasClass('blue') && $('#c4r3').hasClass('blue')) ||
-        ($('#c2r4').hasClass('blue') && $('#c3r4').hasClass('blue') && $('#c4r4').hasClass('blue')) ||
-        ($('#c1r3').hasClass('blue') && $('#c2r2').hasClass('blue') && $('#c3r1').hasClass('blue')) ||
-        ($('#c1r4').hasClass('blue') && $('#c2r3').hasClass('blue') && $('#c4r2').hasClass('blue')) ||
-        ($('#c4r1').hasClass('blue') && $('#c2r3').hasClass('blue') && $('#c4r2').hasClass('blue')) ||
-        ($('#c2r4').hasClass('blue') && $('#c3r3').hasClass('blue') && $('#c2r2').hasClass('blue')) ||
-        ($('#c1r4').hasClass('blue') && $('#c2r3').hasClass('blue') && $('#c4r2').hasClass('blue')) ||
-        ($('#c2r1').hasClass('blue') && $('#c3r2').hasClass('blue') && $('#c4r1').hasClass('blue')) ||
-        ($('#c1r2').hasClass('blue') && $('#c2r3').hasClass('blue') && $('#c3r4').hasClass('blue')) ||
-        ($('#c1r1').hasClass('blue') && $('#c2r2').hasClass('blue') && $('#c3r3').hasClass('blue')) ||
-        ($('#c4r4').hasClass('blue') && $('#c2r2').hasClass('blue') && $('#c3r3').hasClass('blue'))){
-      alert('winner!');
+function checkWinPutin() {
+  if  (($('#c1r4').hasClass('putin') && $('#c1r3').hasClass('putin') && $('#c1r2').hasClass('putin')) ||
+        ($('#c2r4').hasClass('putin') && $('#c2r3').hasClass('putin') && $('#c2r2').hasClass('putin')) ||
+        ($('#c3r4').hasClass('putin') && $('#c3r3').hasClass('putin') && $('#c3r2').hasClass('putin')) ||
+        ($('#c4r4').hasClass('putin') && $('#c4r3').hasClass('putin') && $('#c4r2').hasClass('putin')) ||
+        ($('#c4r2').hasClass('putin') && $('#c4r3').hasClass('putin') && $('#c4r4').hasClass('putin')) ||
+        ($('#c3r2').hasClass('putin') && $('#c3r3').hasClass('putin') && $('#c3r4').hasClass('putin')) ||
+        ($('#c2r2').hasClass('putin') && $('#c2r3').hasClass('putin') && $('#c2r4').hasClass('putin')) ||
+        ($('#c1r2').hasClass('putin') && $('#c1r3').hasClass('putin') && $('#c1r4').hasClass('putin')) ||
+        ($('#c1r1').hasClass('putin') && $('#c2r1').hasClass('putin') && $('#c3r1').hasClass('putin')) ||
+        ($('#c1r2').hasClass('putin') && $('#c2r2').hasClass('putin') && $('#c3r2').hasClass('putin')) ||
+        ($('#c1r3').hasClass('putin') && $('#c2r3').hasClass('putin') && $('#c3r3').hasClass('putin')) ||
+        ($('#c1r4').hasClass('putin') && $('#c2r4').hasClass('putin') && $('#c3r4').hasClass('putin')) ||
+        ($('#c2r1').hasClass('putin') && $('#c3r1').hasClass('putin') && $('#c4r1').hasClass('putin')) ||
+        ($('#c2r2').hasClass('putin') && $('#c3r2').hasClass('putin') && $('#c4r2').hasClass('putin')) ||
+        ($('#c2r3').hasClass('putin') && $('#c3r3').hasClass('putin') && $('#c4r3').hasClass('putin')) ||
+        ($('#c2r4').hasClass('putin') && $('#c3r4').hasClass('putin') && $('#c4r4').hasClass('putin')) ||
+        ($('#c1r3').hasClass('putin') && $('#c2r2').hasClass('putin') && $('#c3r1').hasClass('putin')) ||
+        ($('#c1r4').hasClass('putin') && $('#c2r3').hasClass('putin') && $('#c4r2').hasClass('putin')) ||
+        ($('#c4r1').hasClass('putin') && $('#c2r3').hasClass('putin') && $('#c4r2').hasClass('putin')) ||
+        ($('#c2r4').hasClass('putin') && $('#c3r3').hasClass('putin') && $('#c2r2').hasClass('putin')) ||
+        ($('#c1r4').hasClass('putin') && $('#c2r3').hasClass('putin') && $('#c4r2').hasClass('putin')) ||
+        ($('#c2r1').hasClass('putin') && $('#c3r2').hasClass('putin') && $('#c4r1').hasClass('putin')) ||
+        ($('#c1r2').hasClass('putin') && $('#c2r3').hasClass('putin') && $('#c3r4').hasClass('putin')) ||
+        ($('#c1r1').hasClass('putin') && $('#c2r2').hasClass('putin') && $('#c3r3').hasClass('putin')) ||
+        ($('#c4r4').hasClass('putin') && $('#c2r2').hasClass('putin') && $('#c3r3').hasClass('putin'))){
+      alert('putin wins!');
       this.winnerFound = true;
   }
-}
+};
+
+function checkWinTrump() {
+  if  (($('#c1r4').hasClass('trump') && $('#c1r3').hasClass('trump') && $('#c1r2').hasClass('trump')) ||
+        ($('#c2r4').hasClass('trump') && $('#c2r3').hasClass('trump') && $('#c2r2').hasClass('trump')) ||
+        ($('#c3r4').hasClass('trump') && $('#c3r3').hasClass('trump') && $('#c3r2').hasClass('trump')) ||
+        ($('#c4r4').hasClass('trump') && $('#c4r3').hasClass('trump') && $('#c4r2').hasClass('trump')) ||
+        ($('#c4r2').hasClass('trump') && $('#c4r3').hasClass('trump') && $('#c4r4').hasClass('trump')) ||
+        ($('#c3r2').hasClass('trump') && $('#c3r3').hasClass('trump') && $('#c3r4').hasClass('trump')) ||
+        ($('#c2r2').hasClass('trump') && $('#c2r3').hasClass('trump') && $('#c2r4').hasClass('trump')) ||
+        ($('#c1r2').hasClass('trump') && $('#c1r3').hasClass('trump') && $('#c1r4').hasClass('trump')) ||
+        ($('#c1r1').hasClass('trump') && $('#c2r1').hasClass('trump') && $('#c3r1').hasClass('trump')) ||
+        ($('#c1r2').hasClass('trump') && $('#c2r2').hasClass('trump') && $('#c3r2').hasClass('trump')) ||
+        ($('#c1r3').hasClass('trump') && $('#c2r3').hasClass('trump') && $('#c3r3').hasClass('trump')) ||
+        ($('#c1r4').hasClass('trump') && $('#c2r4').hasClass('trump') && $('#c3r4').hasClass('trump')) ||
+        ($('#c2r1').hasClass('trump') && $('#c3r1').hasClass('trump') && $('#c4r1').hasClass('trump')) ||
+        ($('#c2r2').hasClass('trump') && $('#c3r2').hasClass('trump') && $('#c4r2').hasClass('trump')) ||
+        ($('#c2r3').hasClass('trump') && $('#c3r3').hasClass('trump') && $('#c4r3').hasClass('trump')) ||
+        ($('#c2r4').hasClass('trump') && $('#c3r4').hasClass('trump') && $('#c4r4').hasClass('trump')) ||
+        ($('#c1r3').hasClass('trump') && $('#c2r2').hasClass('trump') && $('#c3r1').hasClass('trump')) ||
+        ($('#c1r4').hasClass('trump') && $('#c2r3').hasClass('trump') && $('#c4r2').hasClass('trump')) ||
+        ($('#c4r1').hasClass('trump') && $('#c2r3').hasClass('trump') && $('#c4r2').hasClass('trump')) ||
+        ($('#c2r4').hasClass('trump') && $('#c3r3').hasClass('trump') && $('#c2r2').hasClass('trump')) ||
+        ($('#c1r4').hasClass('trump') && $('#c2r3').hasClass('trump') && $('#c4r2').hasClass('trump')) ||
+        ($('#c2r1').hasClass('trump') && $('#c3r2').hasClass('trump') && $('#c4r1').hasClass('trump')) ||
+        ($('#c1r2').hasClass('trump') && $('#c2r3').hasClass('trump') && $('#c3r4').hasClass('trump')) ||
+        ($('#c1r1').hasClass('trump') && $('#c2r2').hasClass('trump') && $('#c3r3').hasClass('trump')) ||
+        ($('#c4r4').hasClass('trump') && $('#c2r2').hasClass('trump') && $('#c3r3').hasClass('trump'))){
+      alert('trump wins!');
+      this.winnerFound = true;
+  }
+};
