@@ -1,5 +1,16 @@
 /* eslint-env jQuery, es6 */
 
+class Game {
+  constructor(totalPlays, redPlays, bluePlays, winner, winnerFound) {
+    this.totalPlays = 0;
+    this.redPlays = [];
+    this.bluePlays = [];
+    this.winner = null;
+    this.winnerFound = false;
+    // this.currentPlayer = currentPlayer;
+  }
+}
+
 let currentPlayer = 'red';
 let c1 = ['#c1r4', '#c1r3', '#c1r2', '#c1r1'];
 let c2 = ['#c2r4', '#c2r3', '#c2r2', '#c2r1'];
@@ -15,6 +26,7 @@ function addPlayerCol1() {
     currentPlayer = 'red';
   }
   c1.shift();
+  checkWin();
 }
 
 function addPlayerCol2() {
@@ -26,6 +38,7 @@ function addPlayerCol2() {
     currentPlayer = 'red';
   }
   c2.shift();
+  // checkWin();
 }
 
 function addPlayerCol3() {
@@ -37,6 +50,7 @@ function addPlayerCol3() {
     currentPlayer = 'red';
   }
   c3.shift();
+  // checkWin();
 }
 
 function addPlayerCol4() {
@@ -48,7 +62,9 @@ function addPlayerCol4() {
     currentPlayer = 'red';
   }
   c4.shift();
+  // checkWin();
 }
+
 
 $('.column1').on('click', addPlayerCol1);
 $('.column2').on('click', addPlayerCol2);
