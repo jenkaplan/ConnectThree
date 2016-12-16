@@ -9,7 +9,7 @@ h1 {
 }
 
 .column {
-  margin: 1px;
+  margin: .5px;
   width: 125px;
   height: 500px;
   display: inline-block;
