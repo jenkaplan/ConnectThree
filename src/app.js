@@ -71,4 +71,8 @@ function checkWinTrump() {
   }  else {
     this.winner = false;
   }
-};
+}
+
+// $('button').click(function() {
+//   $('trump').removeAttr('class', 'trump');
+// });

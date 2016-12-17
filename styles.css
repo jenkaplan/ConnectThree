@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+}
+
+.gameboard {
+  float: center;
+  margin: 0 auto;
+  width: 50%;
+  font-size: 0px;
+}
+
+.column {
+  margin: 1px;
+  width: 125px;
+  height: 500px;
+  display: inline-block;
+}
+
+.cell {
+  box-sizing: border-box;
+  border: 2px solid white;
+  width: 125px;
+  height: 125px;
+  background-color: lightblue;
+}
+
+.trump {
+  background: url('images/trump.gif');
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*transition: ease-in 1s;*/
+}
+
+.putin {
+  background: url('images/putin.gif');
+  background-color: red;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*transition: ease-in 1s;*/
+}
+
