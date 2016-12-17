@@ -6,10 +6,11 @@ h1 {
   float: center;
   margin: 0 auto;
   width: 50%;
+  font-size: 0px;
 }
 
 .column {
-  margin: .5px;
+  margin: 1px;
   width: 125px;
   height: 500px;
   display: inline-block;
@@ -17,17 +18,23 @@ h1 {
 
 .cell {
   box-sizing: border-box;
-  border: 1px solid white;
+  border: 2px solid white;
   width: 125px;
   height: 125px;
   background-color: lightblue;
 }
 
 .trump {
+  background: url('images/trump.gif');
   background-color: blue;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .putin {
+  background: url('images/putin.gif');
   background-color: red;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
