@@ -9,7 +9,7 @@ class Game {
     this.c4 = ['#c4r4', '#c4r3', '#c4r2', '#c4r1'];
   }
 
-  addPlayerCol1() {
+  addPlayerCol1(currentPlayer, c1) {
     if (this.currentPlayer === 'putin') {
       $(this.c1[0]).addClass('putin');
       this.currentPlayer = 'trump';
@@ -22,7 +22,7 @@ class Game {
     // checkWinTrump();
   }
 
-  addPlayerCol2() {
+  addPlayerCol2(currentPlayer, c2) {
     if (this.currentPlayer === 'putin') {
       $(this.c2[0]).addClass('putin');
       this.currentPlayer = 'trump';
@@ -35,7 +35,7 @@ class Game {
     // checkWinTrump();
   }
 
-  addPlayerCol3() {
+  addPlayerCol3(currentPlayer, c3) {
     if (this.currentPlayer === 'putin') {
       $(this.c3[0]).addClass('putin');
       this.currentPlayer = 'trump';
@@ -48,7 +48,7 @@ class Game {
     // checkWinTrump();
   }
 
-  addPlayerCol4() {
+  addPlayerCol4(currentPlayer, c4) {
     if (this.currentPlayer === 'putin') {
       $(this.c4[0]).addClass('putin');
       this.currentPlayer = 'trump';
