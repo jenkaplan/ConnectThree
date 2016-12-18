@@ -22,8 +22,8 @@ class Game {
       this.currentPlayer = 'putin';
     }
     this.c1.shift();
-    checkWinPutin();
-    checkWinTrump();
+    winFun.checkWinPutin();
+    winFun.checkWinTrump();
   }
 
   addPlayerCol2(currentPlayer, c2) {
@@ -35,8 +35,8 @@ class Game {
       this.currentPlayer = 'putin';
     }
     this.c2.shift();
-    checkWinPutin();
-    checkWinTrump();
+    winFun.checkWinPutin();
+    winFun.checkWinTrump();
   }
 
   addPlayerCol3(currentPlayer, c3) {
@@ -48,8 +48,8 @@ class Game {
       this.currentPlayer = 'putin';
     }
     this.c3.shift();
-    checkWinPutin();
-    checkWinTrump();
+    winFun.checkWinPutin();
+    winFun.checkWinTrump();
   }
 
   addPlayerCol4(currentPlayer, c4) {
@@ -61,8 +61,8 @@ class Game {
       this.currentPlayer = 'putin';
     }
     this.c4.shift();
-    checkWinPutin();
-    checkWinTrump();
+    winFun.checkWinPutin();
+    winFun.checkWinTrump();
   }
 }
 
