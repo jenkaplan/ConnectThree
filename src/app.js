@@ -1,11 +1,9 @@
 /* eslint-env jQuery, es5, es6 */
 
-
+// this win logic is based on the win logic from the Tic Tac Toe second pass
 class Win {
   constructor() {
-    this.winnerFound = false;
-    // let songAudio = new Audio(RackCity.mp3);
-    // this.song = 'RackCity.mp3';
+    // This solved a scoping issue that J also had http://stackoverflow.com/questions/41169190/using-class-methods-to-draw-on-html5-canvas-scope-problems-js-es6
     this.checkWinPutin = this.checkWinPutin.bind(this);
     this.checkWinTrump = this.checkWinTrump.bind(this);
   }
@@ -40,12 +38,13 @@ class Win {
           ($('#c4r4').hasClass('putin') && $('#c2r2').hasClass('putin') && $('#c3r3').hasClass('putin'))){
       alert('Putin wins!');
       $(alert).makeItRain();
-      const songAudio = new Audio(RackCity.mp3);
+      // I used this to add the song http://stackoverflow.com/questions/9419263/playing-audio-with-javascript
+      let songAudio = new Audio('stylesheets/songs/007.mp3');
       songAudio.play();
-      this.winnerFound = true;
+      game.winnerFound = true;
     }
     else {
-      this.winnerFound = false;
+      game.winnerFound = false;
     }
   }
 
@@ -79,11 +78,12 @@ class Win {
           ($('#c4r4').hasClass('trump') && $('#c2r2').hasClass('trump') && $('#c3r3').hasClass('trump'))){
         alert('Trump wins!');
         $(alert).makeItRain();
-        const songAudio = new Audio(RackCity.mp3);
+        // I used this to add the song http://stackoverflow.com/questions/9419263/playing-audio-with-javascript
+        let songAudio = new Audio('stylesheets/songs/RackCity.mp3');
         songAudio.play();
-        this.winnerFound = true;
+        game.winnerFound = true;
     }  else {
-      this.winnerFound = false;
+      game.winnerFound = false;
     }
   }
 }
