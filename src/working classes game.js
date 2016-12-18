@@ -7,6 +7,10 @@ class Game {
     this.c2 = ['#c2r4', '#c2r3', '#c2r2', '#c2r1'];
     this.c3 = ['#c3r4', '#c3r3', '#c3r2', '#c3r1'];
     this.c4 = ['#c4r4', '#c4r3', '#c4r2', '#c4r1'];
+    this.addPlayerCol1 = this.addPlayerCol1.bind(this);
+    this.addPlayerCol2 = this.addPlayerCol2.bind(this);
+    this.addPlayerCol3 = this.addPlayerCol3.bind(this);
+    this.addPlayerCol4 = this.addPlayerCol4.bind(this);
   }
 
   addPlayerCol1(currentPlayer, c1) {
@@ -18,8 +22,8 @@ class Game {
       this.currentPlayer = 'putin';
     }
     this.c1.shift();
-    // checkWinPutin();
-    // checkWinTrump();
+    winFun.checkWinPutin();
+    winFun.checkWinTrump();
   }
 
   addPlayerCol2(currentPlayer, c2) {
@@ -31,8 +35,8 @@ class Game {
       this.currentPlayer = 'putin';
     }
     this.c2.shift();
-    // checkWinPutin();
-    // checkWinTrump();
+    winFun.checkWinPutin();
+    winFun.checkWinTrump();
   }
 
   addPlayerCol3(currentPlayer, c3) {
@@ -44,8 +48,8 @@ class Game {
       this.currentPlayer = 'putin';
     }
     this.c3.shift();
-    // checkWinPutin();
-    // checkWinTrump();
+    winFun.checkWinPutin();
+    winFun.checkWinTrump();
   }
 
   addPlayerCol4(currentPlayer, c4) {
@@ -57,8 +61,8 @@ class Game {
       this.currentPlayer = 'putin';
     }
     this.c4.shift();
-    // checkWinPutin();
-    // checkWinTrump();
+    winFun.checkWinPutin();
+    winFun.checkWinTrump();
   }
 }
 

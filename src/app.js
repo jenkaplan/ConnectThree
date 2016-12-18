@@ -1,13 +1,16 @@
 /* eslint-env jQuery, es5, es6 */
 
+
 class Win {
-  constructor(winnerFound) {
+  constructor() {
     this.winnerFound = false;
+    // let songAudio = new Audio(RackCity.mp3);
+    // this.song = 'RackCity.mp3';
     this.checkWinPutin = this.checkWinPutin.bind(this);
     this.checkWinTrump = this.checkWinTrump.bind(this);
   }
 
-  checkWinPutin(winnerFound) {
+  checkWinPutin() {
     if  (($('#c1r4').hasClass('putin') && $('#c1r3').hasClass('putin') && $('#c1r2').hasClass('putin')) ||
           ($('#c2r4').hasClass('putin') && $('#c2r3').hasClass('putin') && $('#c2r2').hasClass('putin')) ||
           ($('#c3r4').hasClass('putin') && $('#c3r3').hasClass('putin') && $('#c3r2').hasClass('putin')) ||
@@ -37,6 +40,8 @@ class Win {
           ($('#c4r4').hasClass('putin') && $('#c2r2').hasClass('putin') && $('#c3r3').hasClass('putin'))){
       alert('Putin wins!');
       $(alert).makeItRain();
+      const songAudio = new Audio(RackCity.mp3);
+      songAudio.play();
       this.winnerFound = true;
     }
     else {
@@ -44,7 +49,7 @@ class Win {
     }
   }
 
-  checkWinTrump(winnerFound) {
+  checkWinTrump() {
     if  (($('#c1r4').hasClass('trump') && $('#c1r3').hasClass('trump') && $('#c1r2').hasClass('trump')) ||
           ($('#c2r4').hasClass('trump') && $('#c2r3').hasClass('trump') && $('#c2r2').hasClass('trump')) ||
           ($('#c3r4').hasClass('trump') && $('#c3r3').hasClass('trump') && $('#c3r2').hasClass('trump')) ||
@@ -74,6 +79,8 @@ class Win {
           ($('#c4r4').hasClass('trump') && $('#c2r2').hasClass('trump') && $('#c3r3').hasClass('trump'))){
         alert('Trump wins!');
         $(alert).makeItRain();
+        const songAudio = new Audio(RackCity.mp3);
+        songAudio.play();
         this.winnerFound = true;
     }  else {
       this.winnerFound = false;

@@ -76,3 +76,4 @@ $('.column1').on('click', game.addPlayerCol1);
 $('.column2').on('click', game.addPlayerCol2);
 $('.column3').on('click', game.addPlayerCol3);
 $('.column4').on('click', game.addPlayerCol4);
+
