@@ -16,7 +16,7 @@ class Game {
   }
 
   addPlayerCol1(currentPlayer, c1) {
-    if (this.winnerFound === false) {
+    if (winFun.winnerFound === false) {
       if (this.currentPlayer === 'putin') {
         $(this.c1[0]).addClass('putin');
         this.currentPlayer = 'trump';
@@ -34,7 +34,7 @@ class Game {
   }
 
   addPlayerCol2(currentPlayer, c2) {
-    if (this.winnerFound === false) {
+    if (winFun.winnerFound === false) {
       if (this.currentPlayer === 'putin') {
         $(this.c2[0]).addClass('putin');
         this.currentPlayer = 'trump';
@@ -52,7 +52,7 @@ class Game {
   }
 
   addPlayerCol3(currentPlayer, c3) {
-    if (this.winnerFound === false) {
+    if (winFun.winnerFound === false) {
       if (this.currentPlayer === 'putin') {
         $(this.c3[0]).addClass('putin');
         this.currentPlayer = 'trump';
@@ -69,7 +69,7 @@ class Game {
     }
   }
   addPlayerCol4(currentPlayer, c4) {
-    if (this.winnerFound === false) {
+    if (winFun.winnerFound === false) {
       if (this.currentPlayer === 'putin') {
         $(this.c4[0]).addClass('putin');
         this.currentPlayer = 'trump';

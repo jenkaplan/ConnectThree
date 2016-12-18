@@ -3,6 +3,7 @@
 // this win logic is based on the win logic from the Tic Tac Toe second pass
 class Win {
   constructor() {
+    this.winnerFound = false;
     // This solved a scoping issue that J also had http://stackoverflow.com/questions/41169190/using-class-methods-to-draw-on-html5-canvas-scope-problems-js-es6
     this.checkWinPutin = this.checkWinPutin.bind(this);
     this.checkWinTrump = this.checkWinTrump.bind(this);
@@ -41,10 +42,10 @@ class Win {
       // I used this to add the song http://stackoverflow.com/questions/9419263/playing-audio-with-javascript
       let songAudio = new Audio('stylesheets/songs/007.mp3');
       songAudio.play();
-      game.winnerFound = true;
+      this.winnerFound = true;
     }
     else {
-      game.winnerFound = false;
+      this.winnerFound = false;
     }
   }
 
@@ -81,9 +82,9 @@ class Win {
         // I used this to add the song http://stackoverflow.com/questions/9419263/playing-audio-with-javascript
         let songAudio = new Audio('stylesheets/songs/RackCity.mp3');
         songAudio.play();
-        game.winnerFound = true;
+        this.winnerFound = true;
     }  else {
-      game.winnerFound = false;
+      this.winnerFound = false;
     }
   }
 }

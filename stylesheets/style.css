@@ -1,11 +1,12 @@
-h1, h3 {
+h1, h3, footer {
   text-align: center;
+  font-family: 'Special Elite', cursive;
 }
 
 .gameboard {
   float: center;
   margin: 0 auto;
-  width: 50%;
+  width: 52%;
   font-size: 0px;
 }
 
@@ -39,4 +40,3 @@ h1, h3 {
   background-position: center;
   /*transition: ease-in 1s;*/
 }
-
