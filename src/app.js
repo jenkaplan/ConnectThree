@@ -40,8 +40,8 @@ class Win {
       alert('Putin wins!');
       $(alert).makeItRain();
       // I used this to add the song http://stackoverflow.com/questions/9419263/playing-audio-with-javascript
-      let songAudio = new Audio('stylesheets/songs/007.mp3');
-      songAudio.play();
+      let bond = new Audio('stylesheets/songs/007.mp3');
+      bond.play();
       this.winnerFound = true;
     }
     else {
@@ -80,8 +80,8 @@ class Win {
         alert('Trump wins!');
         $(alert).makeItRain();
         // I used this to add the song http://stackoverflow.com/questions/9419263/playing-audio-with-javascript
-        let songAudio = new Audio('stylesheets/songs/RackCity.mp3');
-        songAudio.play();
+        let rackCity = new Audio('stylesheets/songs/RackCity.mp3');
+        rackCity.play();
         this.winnerFound = true;
     }  else {
       this.winnerFound = false;
