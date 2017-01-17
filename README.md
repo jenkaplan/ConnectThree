@@ -37,8 +37,6 @@ This is the large photo of my wireframe. I also have smaller photos that are eas
 -At first I wanted an H2 to say who's turn it is and who won, but then I decided to do an alert so it could trigger the Make It Rain and the song.
 
 ## Unsolved Problems
--I would like to have this look good accross browsers. 
--I am confused by testing the responsiveness. In the tester this looks good on desktop, tablet and mobile, but in reality when I make my window narrower it looks bad.
 -I would like to have Putin and Trump drop down.
 -I'm not happy with how the images look. I would like to get a friend to create better images.
 
