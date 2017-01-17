@@ -1,10 +1,9 @@
 /* eslint-env jQuery, es5, es6 */
 
-// this win logic is based on the win logic from the Tic Tac Toe second pass
 class Win {
   constructor() {
     this.winnerFound = false;
-    // This solved a scoping issue that J also had http://stackoverflow.com/questions/41169190/using-class-methods-to-draw-on-html5-canvas-scope-problems-js-es6
+    // This solved a scoping issue http://stackoverflow.com/questions/41169190/using-class-methods-to-draw-on-html5-canvas-scope-problems-js-es6
     this.checkWinPutin = this.checkWinPutin.bind(this);
     this.checkWinTrump = this.checkWinTrump.bind(this);
   }

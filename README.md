@@ -1,6 +1,6 @@
 # Connect Three
 A poor man's Connect Four.
-Insert link to live one here
+[Link to Game](https://jenkaplan.github.io/game/index.html)
 
 ## Technologies Used
 -HTML5

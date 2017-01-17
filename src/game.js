@@ -7,7 +7,7 @@ class Game {
     this.c2 = ['#c2r4', '#c2r3', '#c2r2', '#c2r1'];
     this.c3 = ['#c3r4', '#c3r3', '#c3r2', '#c3r1'];
     this.c4 = ['#c4r4', '#c4r3', '#c4r2', '#c4r1'];
-    // This solved a scoping issue that J also had http://stackoverflow.com/questions/41169190/using-class-methods-to-draw-on-html5-canvas-scope-problems-js-es6
+    // This solved a scoping issue http://stackoverflow.com/questions/41169190/using-class-methods-to-draw-on-html5-canvas-scope-problems-js-es6
     this.addPlayerCol1 = this.addPlayerCol1.bind(this);
     this.addPlayerCol2 = this.addPlayerCol2.bind(this);
     this.addPlayerCol3 = this.addPlayerCol3.bind(this);
