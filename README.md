@@ -1,13 +1,13 @@
 # Connect Three
-A poor man's Connect Four.
-[Link to Game](https://jenkaplan.github.io/game/index.html)
+A fun game of Connect Three!
+[Link to Game](https://jenkaplan.github.io/ConnectThree/ConnectThree.html)
 
 ## Technologies Used
--HTML5
--CSS3
--ES6
--jQuery
--Make It Rain Library
+- HTML5
+- CSS3
+- ES6
+- jQuery
+- Make It Rain Library
 
 ## Contributing
 Thank you to my many classmates in the General Assembly Web Development Immersive for helping me talk through my logic.
@@ -31,13 +31,13 @@ This is the large photo of my wireframe. I also have smaller photos that are eas
 ![Wireframe](https://i.imgur.com/JiAV4vF.jpg)
 
 ## MVP
--Create a game where when you click on a column, the player goes to the bottom most cell in the column.
--Get it to switch players.
--Create function to show what player won.
--At first I wanted an H2 to say who's turn it is and who won, but then I decided to do an alert so it could trigger the Make It Rain and the song.
+- Create a game where when you click on a column, the player goes to the bottom most cell in the column.
+- Get it to switch players.
+- Create function to show what player won.
+- At first I wanted an H2 to say who's turn it is and who won, but then I decided to do an alert so it could trigger the Make It Rain and the song.
 
 ## Unsolved Problems
--I would like to have Putin and Trump drop down.
--I'm not happy with how the images look. I would like to get a friend to create better images.
+- I would like to have Putin and Trump drop down.
+- I'm not happy with how the images look. I would like to get a friend to create better images.
 
 
