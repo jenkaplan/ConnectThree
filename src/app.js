@@ -87,8 +87,8 @@ class Win {
         alert('Trump wins!');
         $(alert).makeItRain();
         // I used this to add the song http://stackoverflow.com/questions/9419263/playing-audio-with-javascript
-        let rackCity = new Audio('stylesheets/songs/RackCity.mp3');
-        rackCity.play();
+        let bennyHill = new Audio('stylesheets/songs/BennyHill.mp3');
+        bennyHill.play();
         this.winnerFound = true;
     }  else {
       this.winnerFound = false;
