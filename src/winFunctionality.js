@@ -44,7 +44,7 @@ class Win {
       alert('Putin wins!');
       $(alert).makeItRain();
       // I used this to add the song http://stackoverflow.com/questions/9419263/playing-audio-with-javascript
-      let bond = new Audio('stylesheets/songs/007.mp3');
+      const bond = new Audio('stylesheets/songs/007.mp3');
       bond.play();
       this.winnerFound = true;
     }
@@ -89,16 +89,16 @@ class Win {
         alert('Trump wins!');
         $(alert).makeItRain();
         // I used this to add the song http://stackoverflow.com/questions/9419263/playing-audio-with-javascript
-        let bennyHill = new Audio('stylesheets/songs/BennyHill.mp3');
-        bennyHill.play();
-        this.winnerFound = true;
+      const bennyHill = new Audio('stylesheets/songs/BennyHill.mp3');
+      bennyHill.play();
+      this.winnerFound = true;
     }  else {
       this.winnerFound = false;
     }
   }
 }
 
-let winFun = new Win();
+// let winFun = new Win();
 // $('button').click(function() {
 //   $('trump').removeAttr('class', 'trump');
 // });
