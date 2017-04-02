@@ -1,6 +1,7 @@
 # Connect Three
 A fun game of Connect Three!
-[Link to Game](https://jenkaplan.github.io/connect-three/)
+
+[Link to Game](http://www.jenniferkaplan.nyc/connect-three/)
 
 ## Technologies Used
 - HTML5
