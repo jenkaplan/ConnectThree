@@ -13,7 +13,9 @@ A fun game of Connect Three!
 ## Contributing
 Thank you to my many classmates in the General Assembly Web Development Immersive for helping me talk through my logic.
 
-Thank you to my good friend Luke Kelly for coming up with the idea to have Rack City play when Trump wins and 007 when Putin wins. That was genius. 
+Thank you to my good friend Luke Kelly for coming up with the idea to have ~~Rack City~~ play when Trump wins and 007 when Putin wins. That was genius. 
+
+The song Rack City has been replaced by the Benny Hill theme due to the inappropriate nature of the song and potential employers playing the game. However, it is still a funny idea.
 
 ## Approach Taken
 I was really struggling with my pseudo coding before. I understood the theory, but I did not properly impliment it. For this I knew I had to fix that problem and I really pseudo coded this out or else I would not be able to get it done. In my pseudo code I broke down goals for Thursday and Friday. My goal was to hit MVP by Friday. On Friday I realized I had to create my game in classes, so I decided to finish my game without classes, then on Saturday to impliment classes, giving myself one day to stylize my game. This was incredibly helpful as it gave me clear goals and timeframes and enough time to handle any issues that would arise.  
