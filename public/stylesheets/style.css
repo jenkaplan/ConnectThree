@@ -27,7 +27,7 @@ h1, h3, footer {
 }
 
 .trump {
-  background: url('images/trump.gif');
+  background: url('../images/trump.gif');
   background-color: blue;
   background-repeat: no-repeat;
   background-position: center;
@@ -35,7 +35,7 @@ h1, h3, footer {
 }
 
 .putin {
-  background: url('images/putin.gif');
+  background: url('../images/putin.gif');
   background-color: red;
   background-repeat: no-repeat;
   background-position: center;
