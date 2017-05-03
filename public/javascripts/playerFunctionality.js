@@ -21,6 +21,7 @@ class Game {
       if (this.currentPlayer === 'putin') {
         // if so it takes the first item in the array and adds a class of putin
         $(this.c1[0]).addClass('putin');
+        // document.getElementById('c1[0]').setAttribute('class', 'putin');
         // then it switches the player to trump
         this.currentPlayer = 'trump';
       } else {
