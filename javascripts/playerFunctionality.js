@@ -1,5 +1,3 @@
-/* eslint-env jQuery, es6, es5 */
-
 class Game {
   constructor(currentPlayer) {
     this.currentPlayer = currentPlayer;
@@ -7,7 +5,6 @@ class Game {
     this.c2 = ['#c2r4', '#c2r3', '#c2r2', '#c2r1'];
     this.c3 = ['#c3r4', '#c3r3', '#c3r2', '#c3r1'];
     this.c4 = ['#c4r4', '#c4r3', '#c4r2', '#c4r1'];
-    // This solved a scoping issue http://stackoverflow.com/questions/41169190/using-class-methods-to-draw-on-html5-canvas-scope-problems-js-es6
     this.addPlayerCol1 = this.addPlayerCol1.bind(this);
     this.addPlayerCol2 = this.addPlayerCol2.bind(this);
     this.addPlayerCol3 = this.addPlayerCol3.bind(this);
@@ -21,7 +18,6 @@ class Game {
       if (this.currentPlayer === 'putin') {
         // if so it takes the first item in the array and adds a class of putin
         $(this.c1[0]).addClass('putin');
-        // document.getElementById('c1[0]').setAttribute('class', 'putin');
         // then it switches the player to trump
         this.currentPlayer = 'trump';
       } else {
@@ -32,8 +28,7 @@ class Game {
       // this removes the first item from the array since it is now filled
       this.c1.shift();
       // this checks to see if putin or trump won
-      winFun.checkWinPutin();
-      winFun.checkWinTrump();
+      winFun.checkWin();
     }
     else {
       alert('The game is over. Please refresh the page to play again.');
@@ -50,8 +45,7 @@ class Game {
         this.currentPlayer = 'putin';
       }
       this.c2.shift();
-      winFun.checkWinPutin();
-      winFun.checkWinTrump();
+      winFun.checkWin();
     }
     else {
       alert('The game is over. Please refresh the page to play again.');
@@ -68,8 +62,7 @@ class Game {
         this.currentPlayer = 'putin';
       }
       this.c3.shift();
-      winFun.checkWinPutin();
-      winFun.checkWinTrump();
+      winFun.checkWin();
     }
     else {
       alert('The game is over. Please refresh the page to play again.');
@@ -85,8 +78,7 @@ class Game {
         this.currentPlayer = 'putin';
       }
       this.c4.shift();
-      winFun.checkWinPutin();
-      winFun.checkWinTrump();
+      winFun.checkWin();
     }
     else {
       alert('The game is over. Please refresh the page to play again.');
