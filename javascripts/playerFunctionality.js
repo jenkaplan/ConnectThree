@@ -11,7 +11,7 @@ class Game {
     this.addPlayerCol4 = this.addPlayerCol4.bind(this);
   }
 // I will only break down addPlayCol1 because the rest of them are exactly the same, just different column numbers
-  addPlayerCol1(currentPlayer, c1) {
+  addPlayerCol1() {
     // this checks to see if the winner was found from app.js
     if (winFun.winnerFound === false) {
       // if false it checks to see if the player is putin
@@ -35,7 +35,7 @@ class Game {
     }
   }
 
-  addPlayerCol2(currentPlayer, c2) {
+  addPlayerCol2() {
     if (winFun.winnerFound === false) {
       if (this.currentPlayer === 'putin') {
         $(this.c2[0]).addClass('putin');
@@ -52,7 +52,7 @@ class Game {
     }
   }
 
-  addPlayerCol3(currentPlayer, c3) {
+  addPlayerCol3() {
     if (winFun.winnerFound === false) {
       if (this.currentPlayer === 'putin') {
         $(this.c3[0]).addClass('putin');
@@ -68,7 +68,7 @@ class Game {
       alert('The game is over. Please refresh the page to play again.');
     }
   }
-  addPlayerCol4(currentPlayer, c4) {
+  addPlayerCol4() {
     if (winFun.winnerFound === false) {
       if (this.currentPlayer === 'putin') {
         $(this.c4[0]).addClass('putin');
