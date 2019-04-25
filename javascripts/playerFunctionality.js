@@ -88,7 +88,7 @@ class Game {
   }
 }
 
-let game = new Game('trump');
+const game = new Game('trump');
 
 document.querySelector('#column1').addEventListener('click', game.addPlayerCol1);
 document.querySelector('#column2').addEventListener('click', game.addPlayerCol2);
