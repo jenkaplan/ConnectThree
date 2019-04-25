@@ -6,38 +6,38 @@ class Win {
 
   checkWin() {
     ['putin', 'trump'].forEach(leader => {
-    if  (($('#c1r4').hasClass(leader) && $('#c1r3').hasClass(leader) && $('#c1r2').hasClass(leader)) ||
-      ($('#c2r4').hasClass(leader) && $('#c2r3').hasClass(leader) && $('#c2r2').hasClass(leader)) ||
-      ($('#c3r4').hasClass(leader) && $('#c3r3').hasClass(leader) && $('#c3r2').hasClass(leader)) ||
-      ($('#c4r4').hasClass(leader) && $('#c4r3').hasClass(leader) && $('#c4r2').hasClass(leader)) ||
-      ($('#c4r2').hasClass(leader) && $('#c4r3').hasClass(leader) && $('#c4r4').hasClass(leader)) ||
-      ($('#c3r2').hasClass(leader) && $('#c3r3').hasClass(leader) && $('#c3r4').hasClass(leader)) ||
-      ($('#c2r2').hasClass(leader) && $('#c2r3').hasClass(leader) && $('#c2r4').hasClass(leader)) ||
-      ($('#c1r2').hasClass(leader) && $('#c1r3').hasClass(leader) && $('#c1r4').hasClass(leader)) ||
-      ($('#c1r1').hasClass(leader) && $('#c2r1').hasClass(leader) && $('#c3r1').hasClass(leader)) ||
-      ($('#c1r2').hasClass(leader) && $('#c2r2').hasClass(leader) && $('#c3r2').hasClass(leader)) ||
-      ($('#c1r3').hasClass(leader) && $('#c2r3').hasClass(leader) && $('#c3r3').hasClass(leader)) ||
-      ($('#c1r4').hasClass(leader) && $('#c2r4').hasClass(leader) && $('#c3r4').hasClass(leader)) ||
-      ($('#c2r1').hasClass(leader) && $('#c3r1').hasClass(leader) && $('#c4r1').hasClass(leader)) ||
-      ($('#c2r2').hasClass(leader) && $('#c3r2').hasClass(leader) && $('#c4r2').hasClass(leader)) ||
-      ($('#c2r3').hasClass(leader) && $('#c3r3').hasClass(leader) && $('#c4r3').hasClass(leader)) ||
-      ($('#c2r4').hasClass(leader) && $('#c3r4').hasClass(leader) && $('#c4r4').hasClass(leader)) ||
-      ($('#c1r3').hasClass(leader) && $('#c2r2').hasClass(leader) && $('#c3r1').hasClass(leader)) ||
-      ($('#c1r4').hasClass(leader) && $('#c2r3').hasClass(leader) && $('#c3r2').hasClass(leader)) ||
-      ($('#c4r1').hasClass(leader) && $('#c3r2').hasClass(leader) && $('#c2r1').hasClass(leader)) ||
-      ($('#c4r4').hasClass(leader) && $('#c3r3').hasClass(leader) && $('#c2r2').hasClass(leader)) ||
-      ($('#c1r4').hasClass(leader) && $('#c2r3').hasClass(leader) && $('#c3r2').hasClass(leader)) ||
-      ($('#c2r1').hasClass(leader) && $('#c3r2').hasClass(leader) && $('#c4r1').hasClass(leader)) ||
-      ($('#c1r2').hasClass(leader) && $('#c2r3').hasClass(leader) && $('#c3r4').hasClass(leader)) ||
-      ($('#c1r1').hasClass(leader) && $('#c2r2').hasClass(leader) && $('#c3r3').hasClass(leader)) ||
-      ($('#c1r4').hasClass(leader) && $('#c2r3').hasClass(leader) && $('#c3r2').hasClass(leader)) ||
-      ($('#c4r3').hasClass(leader) && $('#c3r2').hasClass(leader) && $('#c2r1').hasClass(leader)) ||
-      ($('#c1r1').hasClass(leader) && $('#c1r2').hasClass(leader) && $('#c1r3').hasClass(leader)) ||
-      ($('#c2r1').hasClass(leader) && $('#c2r2').hasClass(leader) && $('#c2r3').hasClass(leader)) ||
-      ($('#c3r1').hasClass(leader) && $('#c3r2').hasClass(leader) && $('#c3r3').hasClass(leader)) ||
-      ($('#c4r1').hasClass(leader) && $('#c4r2').hasClass(leader) && $('#c4r3').hasClass(leader)) ||
-      ($('#c2r4').hasClass(leader) && $('#c3r3').hasClass(leader) && $('#c4r2').hasClass(leader)) ||
-      ($('#c4r4').hasClass(leader) && $('#c2r2').hasClass(leader) && $('#c3r3').hasClass(leader))) {
+    if  ((document.querySelector('#c1r4').classList.contains(leader) && document.querySelector('#c1r3').classList.contains(leader) && document.querySelector('#c1r2').classList.contains(leader)) ||
+      (document.querySelector('#c2r4').classList.contains(leader) && document.querySelector('#c2r3').classList.contains(leader) && document.querySelector('#c2r2').classList.contains(leader)) ||
+      (document.querySelector('#c3r4').classList.contains(leader) && document.querySelector('#c3r3').classList.contains(leader) && document.querySelector('#c3r2').classList.contains(leader)) ||
+      (document.querySelector('#c4r4').classList.contains(leader) && document.querySelector('#c4r3').classList.contains(leader) && document.querySelector('#c4r2').classList.contains(leader)) ||
+      (document.querySelector('#c4r2').classList.contains(leader) && document.querySelector('#c4r3').classList.contains(leader) && document.querySelector('#c4r4').classList.contains(leader)) ||
+      (document.querySelector('#c3r2').classList.contains(leader) && document.querySelector('#c3r3').classList.contains(leader) && document.querySelector('#c3r4').classList.contains(leader)) ||
+      (document.querySelector('#c2r2').classList.contains(leader) && document.querySelector('#c2r3').classList.contains(leader) && document.querySelector('#c2r4').classList.contains(leader)) ||
+      (document.querySelector('#c1r2').classList.contains(leader) && document.querySelector('#c1r3').classList.contains(leader) && document.querySelector('#c1r4').classList.contains(leader)) ||
+      (document.querySelector('#c1r1').classList.contains(leader) && document.querySelector('#c2r1').classList.contains(leader) && document.querySelector('#c3r1').classList.contains(leader)) ||
+      (document.querySelector('#c1r2').classList.contains(leader) && document.querySelector('#c2r2').classList.contains(leader) && document.querySelector('#c3r2').classList.contains(leader)) ||
+      (document.querySelector('#c1r3').classList.contains(leader) && document.querySelector('#c2r3').classList.contains(leader) && document.querySelector('#c3r3').classList.contains(leader)) ||
+      (document.querySelector('#c1r4').classList.contains(leader) && document.querySelector('#c2r4').classList.contains(leader) && document.querySelector('#c3r4').classList.contains(leader)) ||
+      (document.querySelector('#c2r1').classList.contains(leader) && document.querySelector('#c3r1').classList.contains(leader) && document.querySelector('#c4r1').classList.contains(leader)) ||
+      (document.querySelector('#c2r2').classList.contains(leader) && document.querySelector('#c3r2').classList.contains(leader) && document.querySelector('#c4r2').classList.contains(leader)) ||
+      (document.querySelector('#c2r3').classList.contains(leader) && document.querySelector('#c3r3').classList.contains(leader) && document.querySelector('#c4r3').classList.contains(leader)) ||
+      (document.querySelector('#c2r4').classList.contains(leader) && document.querySelector('#c3r4').classList.contains(leader) && document.querySelector('#c4r4').classList.contains(leader)) ||
+      (document.querySelector('#c1r3').classList.contains(leader) && document.querySelector('#c2r2').classList.contains(leader) && document.querySelector('#c3r1').classList.contains(leader)) ||
+      (document.querySelector('#c1r4').classList.contains(leader) && document.querySelector('#c2r3').classList.contains(leader) && document.querySelector('#c3r2').classList.contains(leader)) ||
+      (document.querySelector('#c4r1').classList.contains(leader) && document.querySelector('#c3r2').classList.contains(leader) && document.querySelector('#c2r1').classList.contains(leader)) ||
+      (document.querySelector('#c4r4').classList.contains(leader) && document.querySelector('#c3r3').classList.contains(leader) && document.querySelector('#c2r2').classList.contains(leader)) ||
+      (document.querySelector('#c1r4').classList.contains(leader) && document.querySelector('#c2r3').classList.contains(leader) && document.querySelector('#c3r2').classList.contains(leader)) ||
+      (document.querySelector('#c2r1').classList.contains(leader) && document.querySelector('#c3r2').classList.contains(leader) && document.querySelector('#c4r1').classList.contains(leader)) ||
+      (document.querySelector('#c1r2').classList.contains(leader) && document.querySelector('#c2r3').classList.contains(leader) && document.querySelector('#c3r4').classList.contains(leader)) ||
+      (document.querySelector('#c1r1').classList.contains(leader) && document.querySelector('#c2r2').classList.contains(leader) && document.querySelector('#c3r3').classList.contains(leader)) ||
+      (document.querySelector('#c1r4').classList.contains(leader) && document.querySelector('#c2r3').classList.contains(leader) && document.querySelector('#c3r2').classList.contains(leader)) ||
+      (document.querySelector('#c4r3').classList.contains(leader) && document.querySelector('#c3r2').classList.contains(leader) && document.querySelector('#c2r1').classList.contains(leader)) ||
+      (document.querySelector('#c1r1').classList.contains(leader) && document.querySelector('#c1r2').classList.contains(leader) && document.querySelector('#c1r3').classList.contains(leader)) ||
+      (document.querySelector('#c2r1').classList.contains(leader) && document.querySelector('#c2r2').classList.contains(leader) && document.querySelector('#c2r3').classList.contains(leader)) ||
+      (document.querySelector('#c3r1').classList.contains(leader) && document.querySelector('#c3r2').classList.contains(leader) && document.querySelector('#c3r3').classList.contains(leader)) ||
+      (document.querySelector('#c4r1').classList.contains(leader) && document.querySelector('#c4r2').classList.contains(leader) && document.querySelector('#c4r3').classList.contains(leader)) ||
+      (document.querySelector('#c2r4').classList.contains(leader) && document.querySelector('#c3r3').classList.contains(leader) && document.querySelector('#c4r2').classList.contains(leader)) ||
+      (document.querySelector('#c4r4').classList.contains(leader) && document.querySelector('#c2r2').classList.contains(leader) && document.querySelector('#c3r3').classList.contains(leader))) {
         if (leader === 'putin') {
           alert('Putin wins!');
           $(alert).makeItRain();

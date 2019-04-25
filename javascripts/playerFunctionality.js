@@ -10,6 +10,8 @@ class Game {
     this.addPlayerCol3 = this.addPlayerCol3.bind(this);
     this.addPlayerCol4 = this.addPlayerCol4.bind(this);
   }
+
+
 // I will only break down addPlayCol1 because the rest of them are exactly the same, just different column numbers
   addPlayerCol1() {
     // this checks to see if the winner was found from app.js
@@ -17,12 +19,12 @@ class Game {
       // if false it checks to see if the player is putin
       if (this.currentPlayer === 'putin') {
         // if so it takes the first item in the array and adds a class of putin
-        $(this.c1[0]).addClass('putin');
+        document.querySelector(this.c1[0]).className += ' putin';
         // then it switches the player to trump
         this.currentPlayer = 'trump';
       } else {
         // if the current player isn't putin, then it is trump. it adds the class of trump then switches the player to putin
-        $(this.c1[0]).addClass('trump');
+        document.querySelector(this.c1[0]).className += ' trump';
         this.currentPlayer = 'putin';
       }
       // this removes the first item from the array since it is now filled
@@ -38,10 +40,10 @@ class Game {
   addPlayerCol2() {
     if (winFun.winnerFound === false) {
       if (this.currentPlayer === 'putin') {
-        $(this.c2[0]).addClass('putin');
+        document.querySelector(this.c2[0]).className += ' putin';
         this.currentPlayer = 'trump';
       } else {
-        $(this.c2[0]).addClass('trump');
+        document.querySelector(this.c2[0]).className += ' trump';
         this.currentPlayer = 'putin';
       }
       this.c2.shift();
@@ -55,10 +57,10 @@ class Game {
   addPlayerCol3() {
     if (winFun.winnerFound === false) {
       if (this.currentPlayer === 'putin') {
-        $(this.c3[0]).addClass('putin');
+        document.querySelector(this.c3[0]).className += ' putin';
         this.currentPlayer = 'trump';
       } else {
-        $(this.c3[0]).addClass('trump');
+        document.querySelector(this.c3[0]).className += ' trump';
         this.currentPlayer = 'putin';
       }
       this.c3.shift();
@@ -71,10 +73,10 @@ class Game {
   addPlayerCol4() {
     if (winFun.winnerFound === false) {
       if (this.currentPlayer === 'putin') {
-        $(this.c4[0]).addClass('putin');
+        document.querySelector(this.c4[0]).className += ' putin';
         this.currentPlayer = 'trump';
       } else {
-        $(this.c4[0]).addClass('trump');
+        document.querySelector(this.c4[0]).className += ' trump';
         this.currentPlayer = 'putin';
       }
       this.c4.shift();
@@ -88,8 +90,8 @@ class Game {
 
 let game = new Game('trump');
 
-$('.column1').on('click', game.addPlayerCol1);
-$('.column2').on('click', game.addPlayerCol2);
-$('.column3').on('click', game.addPlayerCol3);
-$('.column4').on('click', game.addPlayerCol4);
+document.querySelector('#column1').addEventListener('click', game.addPlayerCol1);
+document.querySelector('#column2').addEventListener('click', game.addPlayerCol2);
+document.querySelector('#column3').addEventListener('click', game.addPlayerCol3);
+document.querySelector('#column4').addEventListener('click', game.addPlayerCol4);
 
